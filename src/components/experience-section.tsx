@@ -17,18 +17,18 @@ export function ExperienceSection() {
         </div>
         <div className="relative mt-12">
           <div
-            className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border hidden sm:block"
+            className="absolute left-1/2 top-0 hidden h-full w-0.5 -translate-x-1/2 bg-border sm:block"
             aria-hidden="true"
           ></div>
           {experienceData.map((item, index) => (
             <div
               key={index}
-              className={`mb-8 flex w-full items-center sm:w-auto sm:justify-center ${
+              className={`mb-8 flex w-full items-center ${
                 index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'
               }`}
             >
               <div
-                className={`w-full sm:w-1/2 ${
+                className={`w-full px-2 sm:w-1/2 ${
                   index % 2 === 0 ? 'sm:pr-8' : 'sm:pl-8'
                 }`}
               >
