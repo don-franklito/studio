@@ -37,6 +37,8 @@ export const profileData = {
 };
 
 export const navLinks = [
+  { href: '#home', label: 'Inicio' },
+  { href: '#about-me', label: 'Sobre mí' },
   { href: '#experience', label: 'Experiencia' },
   { href: '#skills', label: 'Habilidades' },
   { href: '#certifications', label: 'Certificaciones'},
