@@ -9,6 +9,7 @@ import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { navLinks } from '@/lib/data';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,7 @@ export function Header() {
           ))}
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
+          <ThemeToggle />
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" className="md:hidden">
