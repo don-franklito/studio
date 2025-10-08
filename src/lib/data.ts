@@ -15,6 +15,8 @@ import {
   Server,
   Briefcase,
   Lightbulb,
+  Instagram,
+  Facebook,
 } from 'lucide-react';
 
 import {
@@ -37,7 +39,13 @@ export const navLinks = [
   { href: '#experience', label: 'Experiencia' },
   { href: '#skills', label: 'Habilidades' },
   { href: '#portfolio', label: 'Portafolio' },
+  { href: '#contact', label: 'Contacto' },
 ];
+
+export const contactData = {
+  phone: '+526941181385',
+  email: 'jflizarragal@hotmail.com',
+};
 
 export const experienceData = [
   {
@@ -142,4 +150,6 @@ export const projectsData = [
 export const socialLinks = {
   linkedin: 'https://www.linkedin.com/in/juan-francisco-liz%C3%A1rraga-luna-4a3977114/',
   github: 'https://github.com/Don-Franklito',
+  instagram: '#',
+  facebook: '#',
 };

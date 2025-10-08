@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { socialLinks } from '@/lib/data';
-import { Github, Linkedin, Code2 } from 'lucide-react';
+import { Github, Linkedin, Code2, Instagram, Facebook } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -30,6 +30,24 @@ export function Footer() {
           >
             <Linkedin className="h-6 w-6" />
             <span className="sr-only">LinkedIn</span>
+          </Link>
+          <Link
+            href={socialLinks.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground transition-colors hover:text-primary"
+          >
+            <Instagram className="h-6 w-6" />
+            <span className="sr-only">Instagram</span>
+          </Link>
+          <Link
+            href={socialLinks.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground transition-colors hover:text-primary"
+          >
+            <Facebook className="h-6 w-6" />
+            <span className="sr-only">Facebook</span>
           </Link>
         </div>
       </div>
