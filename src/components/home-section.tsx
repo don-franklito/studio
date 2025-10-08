@@ -18,7 +18,7 @@ export function HomeSection() {
             <Button asChild size="lg">
               <a href="/cv.pdf" download>Descargar CV Completo</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900">
+            <Button asChild size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white hover:text-gray-900">
               <Link href="#portfolio">Ver Proyectos Destacados</Link>
             </Button>
           </div>
