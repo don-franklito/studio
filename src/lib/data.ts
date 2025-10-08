@@ -37,7 +37,6 @@ export const navLinks = [
   { href: '#experience', label: 'Experiencia' },
   { href: '#skills', label: 'Habilidades' },
   { href: '#portfolio', label: 'Portafolio' },
-  { href: '#ai-tool', label: 'Optimizador IA' },
 ];
 
 export const experienceData = [

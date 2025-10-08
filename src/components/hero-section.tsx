@@ -26,7 +26,7 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
-                <a href="#ai-tool">Optimiza tu CV con IA</a>
+                <a href="#portfolio">Ver Portafolio</a>
               </Button>
               <div className="flex items-center gap-2">
                 <Button variant="outline" size="icon" asChild>

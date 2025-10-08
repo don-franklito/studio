@@ -3,7 +3,6 @@ import { HeroSection } from '@/components/hero-section';
 import { ExperienceSection } from '@/components/experience-section';
 import { SkillsSection } from '@/components/skills-section';
 import { PortfolioSection } from '@/components/portfolio-section';
-import { ResumeEnhancerSection } from '@/components/resume-enhancer-section';
 import { Footer } from '@/components/footer';
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
         <ExperienceSection />
         <SkillsSection />
         <PortfolioSection />
-        <ResumeEnhancerSection />
       </main>
       <Footer />
     </div>
