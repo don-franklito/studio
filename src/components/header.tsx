@@ -1,0 +1,63 @@
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import { Menu, Code2 } from 'lucide-react';
+
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { navLinks } from '@/lib/data';
+
+export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container flex h-16 items-center">
+        <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Code2 className="h-6 w-6 text-primary" />
+          <span className="font-bold font-headline">JFLL</span>
+        </Link>
+        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="transition-colors hover:text-primary"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+        <div className="flex flex-1 items-center justify-end space-x-4">
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" className="md:hidden">
+                <Menu className="h-6 w-6" />
+                <span className="sr-only">Toggle Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="pr-0">
+              <Link href="/" className="mr-6 flex items-center space-x-2">
+                <Code2 className="h-6 w-6 text-primary" />
+                <span className="font-bold font-headline">JFLL</span>
+              </Link>
+              <div className="flex flex-col space-y-4 mt-6">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsOpen(false)}
+                    className="text-lg font-medium transition-colors hover:text-primary"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </SheetContent>
+          </Sheet>
+        </div>
+      </div>
+    </header>
+  );
+}

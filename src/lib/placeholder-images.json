@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-picture",
+      "description": "A portrait of a man for the profile picture.",
+      "imageUrl": "https://picsum.photos/seed/jfll-avatar/400/400",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "project-1",
+      "description": "A placeholder image for a web development project.",
+      "imageUrl": "https://picsum.photos/seed/jfll-proj1/600/400",
+      "imageHint": "code laptop"
+    },
+    {
+      "id": "project-2",
+      "description": "A placeholder image for a data optimization project.",
+      "imageUrl": "https://picsum.photos/seed/jfll-proj2/600/400",
+      "imageHint": "data chart"
+    },
+    {
+      "id": "project-3",
+      "description": "A placeholder image for a freelance project.",
+      "imageUrl": "https://picsum.photos/seed/jfll-proj3/600/400",
+      "imageHint": "business meeting"
+    },
+    {
+      "id": "project-4",
+      "description": "A placeholder image for a software quality assurance project.",
+      "imageUrl": "https://picsum.photos/seed/jfll-proj4/600/400",
+      "imageHint": "software testing"
+    }
+  ]
 }
