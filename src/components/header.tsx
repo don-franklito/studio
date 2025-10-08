@@ -3,9 +3,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, Code2 } from 'lucide-react';
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
+
 
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet';
 import { navLinks } from '@/lib/data';
 
 export function Header() {
@@ -38,6 +40,9 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="pr-0">
+              <VisuallyHidden.Root>
+                <SheetTitle>Menú de navegación</SheetTitle>
+              </VisuallyHidden.Root>
               <Link href="/" className="mr-6 flex items-center space-x-2">
                 <Code2 className="h-6 w-6 text-primary" />
                 <span className="font-bold font-headline">JFLL</span>
