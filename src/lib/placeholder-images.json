@@ -3,7 +3,7 @@
     {
       "id": "profile-picture",
       "description": "A portrait of a man for the profile picture.",
-      "imageUrl": "https://picsum.photos/seed/jfll-avatar/400/400",
+      "imageUrl": "/profile.jpg",
       "imageHint": "man portrait"
     },
     {
