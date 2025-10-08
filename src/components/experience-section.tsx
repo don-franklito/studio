@@ -17,19 +17,19 @@ export function ExperienceSection() {
         </div>
         <div className="relative mt-12">
           <div
-            className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border"
+            className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-border hidden sm:block"
             aria-hidden="true"
           ></div>
           {experienceData.map((item, index) => (
             <div
               key={index}
-              className={`mb-8 flex items-center w-full ${
-                index % 2 === 0 ? 'justify-start' : 'justify-end'
+              className={`mb-8 flex w-full items-center sm:w-auto sm:justify-center ${
+                index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'
               }`}
             >
               <div
-                className={`w-1/2 ${
-                  index % 2 === 0 ? 'pr-8' : 'pl-8'
+                className={`w-full sm:w-1/2 ${
+                  index % 2 === 0 ? 'sm:pr-8' : 'sm:pl-8'
                 }`}
               >
                 <Card className="shadow-md transition-shadow duration-300 hover:shadow-xl">
