@@ -182,6 +182,6 @@ export const projectsData = [
 export const socialLinks = {
   linkedin: 'https://www.linkedin.com/in/juan-francisco-liz%C3%A1rraga-luna-4a3977114/',
   github: 'https://github.com/Don-Franklito',
-  instagram: '#',
-  facebook: '#',
+  instagram: 'https://www.instagram.com/_jfranll/',
+  facebook: 'https://www.facebook.com/Frankloo6/',
 };
