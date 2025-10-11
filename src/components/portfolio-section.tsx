@@ -40,11 +40,13 @@ export function PortfolioSection() {
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="outline" asChild>
-                    <Link href={project.link}>
-                      Ver Proyecto <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
+                  {project.link !== '#' && (
+                    <Button variant="outline" asChild>
+                      <Link href={project.link}>
+                        Ver Proyecto <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             );

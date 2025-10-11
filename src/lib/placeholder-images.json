@@ -3,7 +3,7 @@
     {
       "id": "profile-picture",
       "description": "A portrait of a man for the profile picture.",
-      "imageUrl": "/profile.jpg",
+      "imageUrl": "/profile.jpeg",
       "imageHint": "man portrait"
     },
     {
