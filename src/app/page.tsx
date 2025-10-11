@@ -1,6 +1,13 @@
 /**
  * @file page.tsx
- * @description Componente principal de la página de inicio que ensambla todas las secciones del portafolio.
+ * @description
+ * Este archivo define el componente principal de la página de inicio, `Home`.
+ * Next.js, a través de su sistema de enrutamiento de archivos (App Router),
+ * automáticamente renderiza este componente cuando un usuario visita la ruta raíz ("/") de la aplicación.
+ * No necesitas "llamar" a esta función manualmente; el framework se encarga de ello.
+ *
+ * El componente `Home` funciona como un contenedor que ensambla todas las demás secciones
+ * del portafolio en el orden en que deben aparecer en la página.
  */
 import { Header } from '@/components/header';
 import { HomeSection } from '@/components/home-section';
