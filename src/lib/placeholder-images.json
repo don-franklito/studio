@@ -26,9 +26,9 @@
     },
     {
       "id": "project-4",
-      "description": "A placeholder image for a software quality assurance project.",
-      "imageUrl": "https://picsum.photos/seed/jfll-proj4/600/400",
-      "imageHint": "software testing"
+      "description": "A placeholder image for a portafolio web.",
+      "imageUrl": "/images/project-4.png",
+      "imageHint": "portafolio web"
     }
   ]
 }

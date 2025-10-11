@@ -172,10 +172,10 @@ export const projectsData = [
     },
     {
         id: 'project-4',
-        title: 'Aseguramiento de Calidad',
-        description: 'Liderazgo en la ejecución de pruebas funcionales y de regresión, logrando una cobertura de hasta el 85%.',
-        imageHint: 'software testing',
-        link: '#',
+        title: 'Portafolio Web',
+        description: 'Diseño y maquetación de primer portaflio web utilizando diversas herramientas como JavaScript, HTML, CSS, Figma',
+        imageHint: 'portafolio-web',
+        link: 'https://don-franklito.github.io/portafolio-jfll/portafolio/',
     },
 ];
 
