@@ -126,15 +126,15 @@ export const certificationsData = [
     issuer: 'SCRUMstudy',
     date: '04/01/23',
     verifyLink: 'https://www.scrumstudy.com/certification/verify?type=sfc&number=972574',
-    pdfLink: '/certifications/SFC.pdf', // Placeholder
+    pdfLink: '/certifications/ScrumFundamentalsJFLL.pdf', // Placeholder
     icon: Award,
   },
   {
     title: 'Six Sigma Yellow Belt (SSYB)',
     issuer: '6sigmastudy',
-    date: 'N/A',
+    date: '10/02/2025',
     verifyLink: 'https://www.6sigmastudy.com/certification/verify?type=ssyb&number=903210',
-    pdfLink: '/certifications/SSYB.pdf', // Placeholder
+    pdfLink: '/certifications/SixSigmaYellowBeltJFLL.pdf', // Placeholder
     icon: Award,
   },
   {
@@ -142,7 +142,7 @@ export const certificationsData = [
     issuer: 'freeCodeCamp',
     date: 'N/A',
     verifyLink: 'https://freecodecamp.org/certification/franklito/responsive-web-design',
-    pdfLink: '/certifications/ResponsiveWebDesign.pdf', // Placeholder
+    pdfLink: '/certifications/ResponsiveWebDesignJFLL.png', // Placeholder
     icon: Award,
   },
 ];

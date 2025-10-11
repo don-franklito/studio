@@ -9,19 +9,19 @@
     {
       "id": "project-1",
       "description": "A placeholder image for a web development project.",
-      "imageUrl": "https://picsum.photos/seed/jfll-proj1/600/400",
+      "imageUrl": "/images/project-1.png",
       "imageHint": "code laptop"
     },
     {
       "id": "project-2",
       "description": "A placeholder image for a data optimization project.",
-      "imageUrl": "https://picsum.photos/seed/jfll-proj2/600/400",
+      "imageUrl": "/images/project-2.jpeg",
       "imageHint": "data chart"
     },
     {
       "id": "project-3",
       "description": "A placeholder image for a freelance project.",
-      "imageUrl": "https://picsum.photos/seed/jfll-proj3/600/400",
+      "imageUrl": "/images/project-3.png",
       "imageHint": "business meeting"
     },
     {
