@@ -1,7 +1,16 @@
+/**
+ * @file footer.tsx
+ * @description Componente del pie de página de la aplicación.
+ * Muestra el copyright y enlaces a redes sociales.
+ */
 import Link from 'next/link';
 import { socialLinks } from '@/lib/data';
 import { Github, Linkedin, Code2, Instagram, Facebook } from 'lucide-react';
 
+/**
+ * Componente Footer que renderiza el pie de página del sitio.
+ * @returns {JSX.Element} El pie de página.
+ */
 export function Footer() {
   return (
     <footer className="bg-card border-t">

@@ -1,9 +1,18 @@
+/**
+ * @file certifications-section.tsx
+ * @description Componente que muestra la sección de certificaciones.
+ * Presenta cada certificación en una tarjeta con enlaces para verificarla y descargar el PDF.
+ */
 import Link from 'next/link';
 import { certificationsData } from '@/lib/data';
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Download, ExternalLink } from 'lucide-react';
 
+/**
+ * Componente CertificationsSection que renderiza la lista de certificaciones profesionales.
+ * @returns {JSX.Element} La sección de certificaciones.
+ */
 export function CertificationsSection() {
   return (
     <section id="certifications" className="w-full py-12 md:py-24 lg:py-32">

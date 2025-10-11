@@ -1,3 +1,7 @@
+/**
+ * @file page.tsx
+ * @description Componente principal de la página de inicio que ensambla todas las secciones del portafolio.
+ */
 import { Header } from '@/components/header';
 import { HomeSection } from '@/components/home-section';
 import { AboutMeSection } from '@/components/about-me-section';
@@ -8,6 +12,10 @@ import { PortfolioSection } from '@/components/portfolio-section';
 import { ContactSection } from '@/components/contact-section';
 import { Footer } from '@/components/footer';
 
+/**
+ * Componente Home que renderiza la página principal del portafolio.
+ * @returns {JSX.Element} La página de inicio completa con todas sus secciones.
+ */
 export default function Home() {
   return (
     <div className="flex min-h-dvh flex-col">

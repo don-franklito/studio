@@ -1,7 +1,16 @@
+/**
+ * @file skills-section.tsx
+ * @description Componente que muestra la sección de competencias técnicas.
+ * Organiza las habilidades por categorías y muestra cada una con un icono.
+ */
 import { skillsData } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
+/**
+ * Componente SkillsSection que renderiza una lista de habilidades técnicas agrupadas por categoría.
+ * @returns {JSX.Element} La sección de competencias.
+ */
 export function SkillsSection() {
   return (
     <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-card">

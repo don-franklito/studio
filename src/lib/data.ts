@@ -1,3 +1,9 @@
+/**
+ * @file data.ts
+ * @description Archivo central que contiene todos los datos estáticos utilizados en el portafolio.
+ * Esto incluye datos del perfil, enlaces de navegación, experiencia, habilidades, certificaciones, proyectos y redes sociales.
+ * Centralizar los datos aquí facilita su mantenimiento y actualización.
+ */
 import {
   Code,
   Database,
@@ -29,6 +35,9 @@ import {
   NodeJsIcon,
 } from '@/components/icons';
 
+/**
+ * @description Datos del perfil profesional.
+ */
 export const profileData = {
   name: 'Juan Francisco Lizarraga Luna',
   title: 'Ingeniero Full-Stack, Especialista en Calidad de Software y Automatización',
@@ -36,6 +45,9 @@ export const profileData = {
     'Soy un Ingeniero en Tecnologías de la Información con 6 años de experiencia demostrable en el ciclo de vida completo del desarrollo de software. Mi enfoque es generar soluciones eficientes, escalables y de alta calidad en entornos ágiles. Tengo un perfil Full-Stack sólido, con expertise en desarrollo Back-end (Java, PHP con Laravel y CodeIgniter), Front-end (JavaScript, Angular, JQuery) y bases de datos (PostgreSQL, Microsoft SQL). Mi compromiso con la calidad se refleja en mi experiencia liderando pruebas, garantizando una alta cobertura y disponibilidad del sistema. Certificado en Scrum y Six Sigma, aplico metodologías para la automatización de procesos, logrando reducciones significativas en tiempos de procesamiento.',
 };
 
+/**
+ * @description Enlaces de navegación para la cabecera y el menú móvil.
+ */
 export const navLinks = [
   { href: '#home', label: 'Inicio' },
   { href: '#about-me', label: 'Sobre mí' },
@@ -46,11 +58,17 @@ export const navLinks = [
   { href: '#contact', label: 'Contacto' },
 ];
 
+/**
+ * @description Información de contacto.
+ */
 export const contactData = {
   phone: '+526941181385',
   email: 'jflizarragal@hotmail.com',
 };
 
+/**
+ * @description Datos de la experiencia profesional.
+ */
 export const experienceData = [
   {
     role: 'Ingeniero de Soporte',
@@ -82,6 +100,9 @@ export const experienceData = [
   },
 ];
 
+/**
+ * @description Habilidades técnicas y metodologías, agrupadas por categoría.
+ */
 export const skillsData = {
   'Lenguajes y Frameworks': [
     { name: 'Java', icon: Coffee },
@@ -120,6 +141,9 @@ export const skillsData = {
   ],
 };
 
+/**
+ * @description Datos de las certificaciones profesionales.
+ */
 export const certificationsData = [
   {
     title: 'Scrum Fundamentals Certified (SFC)',
@@ -147,7 +171,9 @@ export const certificationsData = [
   },
 ];
 
-
+/**
+ * @description Datos de los proyectos del portafolio.
+ */
 export const projectsData = [
     {
         id: 'project-1',
@@ -179,6 +205,9 @@ export const projectsData = [
     },
 ];
 
+/**
+ * @description Enlaces a perfiles de redes sociales.
+ */
 export const socialLinks = {
   linkedin: 'https://www.linkedin.com/in/juan-francisco-liz%C3%A1rraga-luna-4a3977114/',
   github: 'https://github.com/Don-Franklito',

@@ -1,9 +1,18 @@
+/**
+ * @file contact-section.tsx
+ * @description Componente que muestra la sección de contacto.
+ * Incluye información de teléfono, email y enlaces a redes sociales.
+ */
 import Link from 'next/link';
 import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { contactData, socialLinks } from '@/lib/data';
 import { Phone, Mail, Github, Linkedin, Instagram, Facebook } from 'lucide-react';
 
+/**
+ * Componente ContactSection que renderiza la información de contacto.
+ * @returns {JSX.Element} La sección de contacto.
+ */
 export function ContactSection() {
   return (
     <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-card">

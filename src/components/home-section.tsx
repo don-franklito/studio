@@ -1,6 +1,15 @@
+/**
+ * @file home-section.tsx
+ * @description Componente de la sección de inicio (Hero Section).
+ * Muestra el título principal, el subtítulo y los botones de llamada a la acción.
+ */
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 
+/**
+ * Componente HomeSection que renderiza la sección principal de bienvenida.
+ * @returns {JSX.Element} La sección de inicio.
+ */
 export function HomeSection() {
   return (
     <section id="home" className="w-full py-24 md:py-32 lg:py-40 bg-gray-900 text-white">

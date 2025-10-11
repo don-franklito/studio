@@ -1,5 +1,15 @@
+/**
+ * @file icons.tsx
+ * @description Define componentes de iconos SVG personalizados que no están disponibles en `lucide-react`.
+ * Esto permite usar iconos específicos de tecnologías como Angular, Laravel, etc.
+ */
 import { type FC, type SVGProps } from 'react';
 
+/**
+ * Icono para Angular.
+ * @param {SVGProps<SVGSVGElement>} props - Propiedades del SVG.
+ * @returns {JSX.Element} Icono SVG.
+ */
 export const AngularIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -12,6 +22,11 @@ export const AngularIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 );
 
+/**
+ * Icono para Laravel.
+ * @param {SVGProps<SVGSVGElement>} props - Propiedades del SVG.
+ * @returns {JSX.Element} Icono SVG.
+ */
 export const LaravelIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -23,6 +38,11 @@ export const LaravelIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 );
 
+/**
+ * Icono para CodeIgniter.
+ * @param {SVGProps<SVGSVGElement>} props - Propiedades del SVG.
+ * @returns {JSX.Element} Icono SVG.
+ */
 export const CodeIgniterIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +54,11 @@ export const CodeIgniterIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 );
 
+/**
+ * Icono para Node.js.
+ * @param {SVGProps<SVGSVGElement>} props - Propiedades del SVG.
+ * @returns {JSX.Element} Icono SVG.
+ */
 export const NodeJsIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -45,6 +70,11 @@ export const NodeJsIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 );
 
+/**
+ * Icono para Bitbucket.
+ * @param {SVGProps<SVGSVGElement>} props - Propiedades del SVG.
+ * @returns {JSX.Element} Icono SVG.
+ */
 export const BitbucketIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +86,11 @@ export const BitbucketIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 );
 
+/**
+ * Icono para Jenkins.
+ * @param {SVGProps<SVGSVGElement>} props - Propiedades del SVG.
+ * @returns {JSX.Element} Icono SVG.
+ */
 export const JenkinsIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

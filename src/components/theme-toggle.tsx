@@ -1,3 +1,7 @@
+/**
+ * @file theme-toggle.tsx
+ * @description Componente de botón que permite al usuario cambiar entre los temas claro, oscuro y del sistema.
+ */
 "use client"
 
 import * as React from "react"
@@ -12,6 +16,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+/**
+ * Componente ThemeToggle que renderiza un menú desplegable para cambiar el tema de la aplicación.
+ * @returns {JSX.Element} El botón conmutador de tema.
+ */
 export function ThemeToggle() {
   const { setTheme } = useTheme()
 

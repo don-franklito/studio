@@ -1,3 +1,8 @@
+/**
+ * @file layout.tsx
+ * @description Este es el layout raíz de la aplicación.
+ * Envuelve todo el contenido de la página con proveedores de temas y otros elementos globales.
+ */
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
@@ -8,6 +13,12 @@ export const metadata: Metadata = {
   description: 'Portfolio of Juan Francisco Lizarraga Luna',
 };
 
+/**
+ * Componente RootLayout que define la estructura HTML principal.
+ * @param {object} props - Propiedades del componente.
+ * @param {React.ReactNode} props.children - Componentes hijos que serán renderizados dentro del layout.
+ * @returns {JSX.Element} El layout principal de la aplicación.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{

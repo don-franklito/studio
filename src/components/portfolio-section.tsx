@@ -1,3 +1,8 @@
+/**
+ * @file portfolio-section.tsx
+ * @description Componente que muestra la sección del portafolio de proyectos.
+ * Cada proyecto se presenta en una tarjeta con imagen, título, descripción y un enlace opcional.
+ */
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
@@ -6,6 +11,10 @@ import { projectsData } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight } from 'lucide-react';
 
+/**
+ * Componente PortfolioSection que renderiza una galería de proyectos.
+ * @returns {JSX.Element} La sección del portafolio.
+ */
 export function PortfolioSection() {
   return (
     <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32">
@@ -40,6 +49,7 @@ export function PortfolioSection() {
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
+                  {/* Muestra el botón solo si el enlace del proyecto no es '#' */}
                   {project.link !== '#' && (
                     <Button variant="outline" asChild>
                       <Link href={project.link}>

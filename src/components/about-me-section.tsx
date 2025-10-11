@@ -1,3 +1,8 @@
+/**
+ * @file about-me-section.tsx
+ * @description Componente que muestra la sección "Sobre mí" del portafolio.
+ * Incluye una imagen de perfil, un resumen y enlaces a redes sociales.
+ */
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { profileData, socialLinks } from '@/lib/data';
@@ -5,6 +10,10 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Github, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 
+/**
+ * Componente AboutMeSection que renderiza la información personal y profesional.
+ * @returns {JSX.Element} La sección "Sobre mí".
+ */
 export function AboutMeSection() {
   const profileImage = PlaceHolderImages.find((img) => img.id === 'profile-picture');
 

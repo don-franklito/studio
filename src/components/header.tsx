@@ -1,3 +1,8 @@
+/**
+ * @file header.tsx
+ * @description Componente de la cabecera de la aplicación.
+ * Incluye el logo, la navegación principal, el conmutador de tema (claro/oscuro) y el menú para móviles.
+ */
 'use client';
 
 import { useState } from 'react';
@@ -11,6 +16,11 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/s
 import { navLinks } from '@/lib/data';
 import { ThemeToggle } from '@/components/theme-toggle';
 
+/**
+ * Componente Header que renderiza la barra de navegación superior.
+ * Es responsivo y se adapta a dispositivos móviles con un menú desplegable.
+ * @returns {JSX.Element} La cabecera de la aplicación.
+ */
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,6 +31,7 @@ export function Header() {
           <Code2 className="h-6 w-6 text-primary" />
           <span className="font-bold font-headline">JFLL</span>
         </Link>
+        {/* Navegación para escritorio */}
         <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
           {navLinks.map((link) => (
             <Link
@@ -34,6 +45,7 @@ export function Header() {
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
           <ThemeToggle />
+          {/* Menú para móviles */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" className="md:hidden">

@@ -1,6 +1,15 @@
+/**
+ * @file experience-section.tsx
+ * @description Componente que muestra la sección de experiencia profesional.
+ * Utiliza un diseño de línea de tiempo para presentar la trayectoria laboral.
+ */
 import { experienceData } from '@/lib/data';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
+/**
+ * Componente ExperienceSection que renderiza la experiencia laboral en formato de línea de tiempo.
+ * @returns {JSX.Element} La sección de experiencia.
+ */
 export function ExperienceSection() {
   return (
     <section id="experience" className="w-full py-12 md:py-24 lg:py-32">
@@ -16,6 +25,7 @@ export function ExperienceSection() {
           </div>
         </div>
         <div className="relative mt-12">
+          {/* Línea de tiempo vertical, visible solo en pantallas grandes (sm y superior) */}
           <div
             className="absolute left-1/2 top-0 hidden h-full w-0.5 -translate-x-1/2 bg-border sm:block"
             aria-hidden="true"
@@ -23,7 +33,7 @@ export function ExperienceSection() {
           {experienceData.map((item, index) => (
             <div
               key={index}
-              className={`mb-8 flex w-full items-center ${
+              className={`mb-8 flex w-full items-center sm:max-w-none max-w-md mx-auto ${
                 index % 2 === 0 ? 'sm:justify-start' : 'sm:justify-end'
               }`}
             >
